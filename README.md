@@ -13,8 +13,8 @@ More features will be added soon when we aren't lazy.
 
 You can run it by 2 ways:
 
-**First way**: By downloading the program release and directly run executable file `.exe` and done! You don't need to download or install anything left.<br/>
-**Second way (Early-Access)**: By downloading source code and it python packages. After run or debug program!
+- **First way**: By downloading the program release and directly run executable file `.exe` and done! You don't need to download or install anything left.
+- **Second way (Early-Access)**: By downloading source code and it python packages. After run or debug program!
 
 ### Requirements
 
