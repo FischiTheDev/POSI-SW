@@ -1,3 +1,5 @@
+<img src="icon.ico" align="left" />
+
 # POSI-SW
 
 > Package Online Service Installer Software
