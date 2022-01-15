@@ -6,7 +6,7 @@
 
 ### What is POSI-SW?
 POSI-SW is a tool to download different stuff from the internet such as Github, YouTube, MC and more!
-More features will be added soon when we aren't lazy.
+More features will be added soon when we aren't lazy.<br/>
 
 
 ### How can I run this program?
