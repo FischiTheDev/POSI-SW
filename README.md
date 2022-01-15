@@ -1,4 +1,4 @@
-<img src="icon.ico" width="100" height="100" align="left" />
+<img src="icon.ico" width="120" height="120" align="right" />
 
 # POSI-SW
 
