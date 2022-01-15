@@ -20,6 +20,8 @@ You can run it by 2 ways:
 
 #### Executable file requirements
 
+Those requirements are for `P.O.S.I-SW.exe` :
+
 |      | Minimum requirements | Recommended requirements |
 | ---- | -------------------- | ------------------------ |
 | RAM  | 40 MB                | +300 MB                  |
@@ -32,5 +34,5 @@ You can run it by 2 ways:
 
 |Software| Version |
 |--|--|
-| Python | 3.9.0 |
+| Python | 3.10.1 |
 
