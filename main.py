@@ -8,6 +8,16 @@ import data
 import ToS 
 import messages
 import credit
+import sys
+
+OSplatformVersion = "Unknown!"
+
+if(sys.platform.lower() == "win32"):
+    OSplatformVersion = f"Windows {sys.getwindowsversion().major}"
+elif(sys.platform.lower() in ["linux", "linux2"]):
+    OSplatformVersion = "Linux"
+elif(sys.platform.lower() == "darwin"):
+    OSplatformVersion = "Mac OS"
 
 CWD = os.getcwd()
 
@@ -16,18 +26,19 @@ try:
 except:
     actlikenothinghappened = ""
 
-print("=========================================================================")
-print("|                                                                       |")
-print("|              ____   ___   ____   ___     ______        __             |")
-print("|             |  _ \ / _ \ / ___| |_ _|   / ___\ \      / /             |")
-print("|             | |_) | | | |\___ \  | |____\___ \\\\ \ /\ / /              |")
-print("|             |  __/| |_| | ___) | | |_____|__) |\ V  V /               |")
-print("|             |_| (_)\___(_)____(_)___|   |____/  \_/\_/                |")
-print("|                                                                       |")
-print(f"|               {version.fullname}               |")
-print("|                                                                       |")
-print("|                        Author: yasserprogamer                         |")
-print("=========================================================================")
+print("".center(76, "="))
+print("|"+"".center(74, " ")+"|")
+print("|"+" ____   ___   ____   ___     ______        __".center(74, " ")+"|")
+print("|"+"|  _ \ / _ \ / ___| |_ _|   / ___\ \      / /".center(74, " ")+"|")
+print("|"+"| |_) | | | |\___ \  | |____\___ \\\\ \ /\ / / ".center(74, " ")+"|")
+print("|"+"|  __/| |_| | ___) | | |_____|__) |\ V  V /  ".center(74, " ")+"|")
+print("|"+"|_| (_)\___(_)____(_)___|   |____/  \_/\_/   ".center(74, " ")+"|")
+print("|"+"".center(74, " ")+"|")
+print("|"+f"{version.fullname} ({version.version})".center(74, " ")+"|")
+print("|"+f"{OSplatformVersion}".center(74, " ")+"|")
+print("|"+"".center(74, " ")+"|")
+print("|"+f"{version.CopyrightText}".center(74, " ")+"|")
+print("".center(76, "="))
 
 running = True
 
@@ -35,8 +46,7 @@ print("")
 try:
     UpdateNotificationStatusCode = requests.get("https://posi-sw.github.io/website/version/api/updates/latest.html").status_code
     if(UpdateNotificationStatusCode == 200):
-        UpdateNotification = requests.get("https://posi-sw.github.io/website/version/api/updates/latest.html").text.replace(" ", "").replace("\n", "")
-
+        UpdateNotification = requests.get("https://posi-sw.github.io/website/version/api/updates/latest.html").text.replace(" ", "").replace("\n", "")  
         if(version.version != UpdateNotification):
             print(f"There is new {UpdateNotification} update for this software! You are still on {version.version} version.")
             print("We recommended you to update because we may fixed some of bugs and added new features that you will like! Updating is kinda important for some of outdated versions")
@@ -99,8 +109,8 @@ while(running):
         print("")
         print(f"Welcome to {version.name} ({version.version}).")
         print(f"What service do you want to use?")
-        numbers = [1, 2, 3, 8, 11,0]
-        Services = ["GitHub", "Minecraft", "YouTube", "Settings", "Credit", "Exit"]
+        numbers = [1, 2, 3, 8, 10, 11, 0]
+        Services = ["GitHub", "Minecraft", "YouTube", "Settings", "Social", "Credit", "Exit"]
         for number, service in zip(numbers, Services):
             print(f"[{number}] {service}")
         print("")
@@ -118,10 +128,14 @@ while(running):
             data.Menu = False
             YTServiceStartedNow = True
         elif(SelectedService.lower().replace(" ", "") in ["settings", "8"]):
-            print("Coming soon! This will be existed in next update!")
+            print("Coming soon! This will be probably existed in 1.2!")
             print("")
         #elif(SelectedService.lower() == "repair" or SelectedService.replace(" ", "") == "9"):
         #    import repair
+        elif(SelectedService.lower().replace(" ", "") in ["social", "socialmedia", "socials", "social_media", "social-media", "10"]):
+            data.SocialMenu = True
+            data.Menu = False
+            SOCIALMENUSTARTEDNOW = True
         elif(SelectedService.lower().replace(" ", "") in ["credit", "credits", "11"]):
             credit.credit()
         elif(SelectedService.lower() == "exit" or SelectedService.replace(" ", "") == "0"):
@@ -247,7 +261,7 @@ while(running):
         if(SelectedMCSoftware.lower().startswith("vanilla") or SelectedMCSoftware.replace(" ", "") == "1"):
             data.MinecraftServersMenu = False
             data.MinecraftVanillaServersService = True
-        if(SelectedMCSoftware.lower().replace(" ", "") in ["0", "back", "quit", "leave", "menu"]):
+        elif(SelectedMCSoftware.lower().replace(" ", "") in ["0", "back", "quit", "leave", "menu"]):
             data.MinecraftServersMenu = False
             data.MinecraftMenu = True
         else:
@@ -407,8 +421,8 @@ while(running):
                                     else:
                                         print(f"\"{AutoAcceptingEULAQuestion}\" is not an option! Answer with: YES, Y, TRUE, T or N, NO, F, FALSE or with their number.")
                                         print("")
-                                    AddSH = input("Do you want to make a sh file that start server?\n")
-                                    if(AddSH.upper() == "Y" or AddSH.upper() == "YES" or AddSH.upper() == "T" or AddSH.upper() == "TRUE"):
+                                    AddBat = input("Do you want to make a bat file that start server?\n")
+                                    if(AddBat.upper() == "Y" or AddBat.upper() == "YES" or AddBat.upper() == "T" or AddBat.upper() == "TRUE"):
                                         if(Log4Jprotection == True):
                                             JVMArgument = ""
                                             if(SelectedMCserverVersion.lower().replace(" ", "").startswith("1.17") or SelectedMCserverVersion.lower().replace(" ", "") == "1.18"):
@@ -419,13 +433,13 @@ while(running):
                                             for MCversion in AffectedLogForJ2:
                                                 if(SelectedMCserverVersion.lower().replace(" ", "").startswith(MCversion)):
                                                     JVMArgument = " -Dlog4j.configurationFile=log4j2_112-116.xml"
-                                            shfile = open(f"./Minecraft/servers/{ChoosenVersion}/{MCServername}/start.sh", "w")
+                                            shfile = open(f"./Minecraft/servers/{ChoosenVersion}/{MCServername}/start.bat", "w")
                                             print("Server rams set at: 1GB. You can change it anytime")
                                             shfile.write(f"java -Xmx1024M -Xms1024M{JVMArgument} -jar server.jar nogui\nPAUSE")
                                             print(f"Automatically added JVM arguments:{JVMArgument}")
                                             shfile.close()
                                         elif(Log4Jprotection == False):
-                                            shfile = open(f"./Minecraft/servers/{ChoosenVersion}/{MCServername}/start.sh", "w")
+                                            shfile = open(f"./Minecraft/servers/{ChoosenVersion}/{MCServername}/start.bat", "w")
                                             print("Server rams set at: 1GB. You can change it anytime")
                                             shfile.write("java -Xmx1024M -Xms1024M -jar server.jar nogui\nPAUSE")
                                             shfile.close()
@@ -492,21 +506,60 @@ while(running):
             ContinueYTDownloadingService = True
         
         if(ContinueYTDownloadingService == True):
-            print("Available resolutions:\nLow: 360p\nMedium: 720p\nHigh: 1080p (Full HD)\nVery high: 2160p (4K)")
+            print("Available resolutions:\nLowest: 144p (.3gp)\nLow: 360p\nNormal: 720p (HD)\nHigh: 1080p (Full HD)\nVery high: 2160p (4K) (NO AUDIO)")
             VideoQuality = input("Type resolution of video that you want: ")
             if VideoQuality.lower() in ["cancel", "exit", "leave"]:
                 print("Do you want to leave this downloading operation or back to menu?")
             else:
-                if VideoQuality.lower() in ["low", "360", "360p"]:
+                if VideoQuality.lower() in ["lowest", "144", "144p"]:
+                    VideoQuality = 17
+                elif VideoQuality.lower() in ["low", "360", "360p"]:
                     VideoQuality = 18
-                elif VideoQuality.lower() in ["medium", "720", "720p", "hd"]:
+                elif VideoQuality.lower() in ["normal", "720", "720p", "hd"]:
                     VideoQuality = 22
                 elif VideoQuality.lower() in ["high", "1080", "1080p", "fullhd", "full_hd", "full hd"]:
                     VideoQuality = 137
                 elif VideoQuality.lower() in ["veryhigh", "very high", "very_high", "2160", "2160p", "4k"]:
                     VideoQuality = 313
                 else:
-                    print("Because of incorrect answer or usage, we are going to choose the low quality of video (360p) for you.")
-                    VideoQuality = 18
+                    print("Because of incorrect answer or usage, we are going to choose the lowest quality of video (144p) for you.")
+                    VideoQuality = 17
 
                 YouTube_services.Download(VideoLink, VideoQuality)
+
+    while(data.SocialMenu):
+        if(SOCIALMENUSTARTEDNOW == True):
+            print("".center(106, "—"))
+            print("|"+"Social Media".center(104, " ")+"|")
+            print("|"+"".center(104, " ")+"|")
+            print("|"+"Here you can join us or follow our Social Media.".center(104, " ")+"|")
+            print("|"+"You are able to join our main and developers server in anytime you want!".center(104, " ")+"|")
+            print("".center(106, "—"))
+            SOCIALMENUSTARTEDNOW = False
+
+        print("What do you want to join or follow?")
+        SocialMedias = ["Discord", "Back"]
+        numbers = [1, 0]
+        for number,socialmedia in zip(numbers, SocialMedias):
+            print(f"[{number}] {socialmedia}")
+        print("")
+        SelectedSocialMedia = input("Choose a social media you want to follow or join: ")
+        if(SelectedSocialMedia.lower().replace(" ", "") in ["1", "discord"]):
+            JoinDiscord = True
+            while (JoinDiscord):
+                print("")
+                print("====================================================================")
+                print("")
+                print("Main Discord server (Official): Coming soon....")
+                print("")
+                print("Yasserprogamer's server (Founder): https://discord.gg/wJtBMnu")
+                print("")
+                print("====================================================================")
+                print("")
+                JoinDiscord = False
+        elif(SelectedSocialMedia.lower().replace(" ", "") in ["0", "back", "leave", "mainmenu", "quit", "menu"]):
+            data.SocialMenu = False
+            data.Menu = True
+        else:
+            print(messages.WRONG_OR_NOT_OPTION.replace("[option]", SelectedSocialMedia))
+            print("")
