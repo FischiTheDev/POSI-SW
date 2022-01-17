@@ -5,7 +5,7 @@
 > Package Online Service Installer Software
 
 ### ❓ What is POSI-SW?
-POSI-SW is a tool to download different stuff from the internet such as Github, YouTube, MC and more!
+POSI-SW is a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more!
 More features will be added soon when we aren't lazy.
 
 
@@ -24,7 +24,7 @@ Those requirements are for `P.O.S.I-SW.exe` :
 
 |      | Minimum requirements | Recommended requirements |
 | ---- | -------------------- | ------------------------ |
-| RAM  | 40 MB                | +300 MB                  |
+| RAM  | 65 MB                | +400 MB                  |
 | ROM  | 20 MB                | +200 MB                  |
 | OS   | Win 7, 8.1, 10, 11   | Win 10                   |
 
@@ -36,3 +36,6 @@ Those requirements are for `P.O.S.I-SW.exe` :
 |--|--|
 | Python | 3.10.1 |
 
+### Need help?
+
+[<img src="https://i.ibb.co/CMKbT0L/rsz-1rsz-discord.png" alt="Discord" width="272"/>](https://discord.gg/wJtBMnu)
