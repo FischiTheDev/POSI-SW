@@ -47,7 +47,10 @@ Those requirements are for `P.O.S.I-SW.exe` :
 
 ### 1. Downloading
 
-Download program from
+1. Download a latest version of program.
+2. Open program.
+
+And done! It is very easy and simple!
 
 ## Need help?
 
