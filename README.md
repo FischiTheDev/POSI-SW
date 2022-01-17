@@ -38,4 +38,4 @@ Those requirements are for `P.O.S.I-SW.exe` :
 
 ### Need help?
 
-[<img src="https://i.ibb.co/CMKbT0L/rsz-1rsz-discord.png" alt="Discord" width="272"/>](https://discord.gg/wJtBMnu)
+[<img src="https://i.ibb.co/CMKbT0L/rsz-1rsz-discord.png" alt="Discord" width="285"/>](https://discord.gg/wJtBMnu)
