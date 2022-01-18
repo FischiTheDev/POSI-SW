@@ -12,8 +12,7 @@
 > Package Online Service Installer Software
 
 ## ❓ What is POSI-SW?
-POSI-SW is a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more!
-More features will be added soon when we aren't lazy.
+**POSI-SW is powerful a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more! [Download it now for free](https://github.com/yasserprogamer/POSI-SW/releases).**
 
 
 ## ▶️ How can I run this program?
