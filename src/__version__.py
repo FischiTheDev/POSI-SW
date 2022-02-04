@@ -1,0 +1,6 @@
+__title__ = 'P.O.S.I-SW'
+__description__ = 'Package Online Service Installer Software is a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more!'
+__version__ = '1.1'
+__author__ = 'yasserprogamer'
+__license__ = 'Apache 2.0'
+__copyright__ = 'Copyright 2022 yasserprogamer'

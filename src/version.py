@@ -1,5 +1,5 @@
 name = "P.O.S.I-SW"
 fullname = "Package Online Service Installer Software"
-description = f"{fullname} is a tool to download different stuff from the internet such as GitHub, YouTube, MC and more!"
+description = f"{fullname} is a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more!"
 CopyrightText = "P.O.S.I-SW © 2022"
-version = "1.0.3"
+__version__ = version = "1.1"
