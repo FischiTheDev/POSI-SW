@@ -1,2 +1,4 @@
 requests
 pytube
+pyinstaller
+dnspython
