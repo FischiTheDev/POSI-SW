@@ -7,12 +7,14 @@
 
 <img src="icon.ico" width="120" height="120" align="right" />
 
-# POSI-SW
+# OPI-SW
 
-> Package Online Service Installer Software
+> Online Packages Installer Software
 
-## ❓ What is POSI-SW?
-**POSI-SW is powerful a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more! [Download it now for free](https://github.com/yasserprogamer/POSI-SW/releases).**
+Name is currently changing. We are sorry about it but we had to.
+
+## ❓ What is OPI-SW?
+**O.P.I-SW is powerful a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more! [Download it now for free](https://github.com/yasserprogamer/POSI-SW/releases).**
 
 
 ## ▶️ How can I run this program?
@@ -26,7 +28,7 @@ You can run it by 2 ways:
 
 ### Executable file requirements
 
-Those requirements are for `P.O.S.I-SW.exe` :
+Those requirements are for `O.P.I-SW.exe` :
 
 |      | Minimum requirements | Recommended requirements |
 | ---- | -------------------- | ------------------------ |
@@ -54,3 +56,5 @@ And done! It is very easy and simple!
 ## Need help?
 
 [<img src="https://i.ibb.co/CMKbT0L/rsz-1rsz-discord.png" alt="Discord" width="285"/>](https://discord.gg/wJtBMnu)
+
+**Join us** at **Discord** for **free helps** and **supports**!
