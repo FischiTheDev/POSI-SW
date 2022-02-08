@@ -7,3 +7,4 @@ pip install -r requirements.txt
 echo "Successfully downloaded and installed required python packages!"
 echo ""
 read -s -n 1 -p "Press any key to continue . . ."
+exit 0;
