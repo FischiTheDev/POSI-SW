@@ -1,20 +1,18 @@
 <p align="center">  
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/made%20with-python%20%F0%9F%90%8D-brightgreen" alt="madewithpython" border="0"></a>
-<a href="https://github.com/yasserprogamer/POSI-SW/blob/main/LICENSE"> <img src="https://img.shields.io/github/license/yasserprogamer/POSI-SW" alt="Apache-2.0" border="0"></a> 
-<a href="https://github.com/yasserprogamer/POSI-SW/releases"> <img src="https://img.shields.io/github/v/release/yasserprogamer/POSI-SW?include_prereleases" alt"latestrelease"></a>
-<a href="https://github.com/yasserprogamer/POSI-SW/releases"> <img src="https://img.shields.io/github/downloads/yasserprogamer/POSI-SW/total" alt="downloads" border="0"></a>
+<a href="https://github.com/yasserprogamer/OPPI-SW/blob/main/LICENSE"> <img src="https://img.shields.io/github/license/yasserprogamer/OPPI-SW" alt="Apache-2.0" border="0"></a> 
+<a href="https://github.com/yasserprogamer/OPPI-SW/releases"> <img src="https://img.shields.io/github/v/release/yasserprogamer/OPPI-SW?include_prereleases" alt"latestrelease"></a>
+<a href="https://github.com/yasserprogamer/OPPI-SW/releases"> <img src="https://img.shields.io/github/downloads/yasserprogamer/OPPI-SW/total" alt="downloads" border="0"></a>
 </p>
 
 <img src="icon.ico" width="120" height="120" align="right" />
 
-# OPI-SW
+# OPPI-SW
 
-> Online Packages Installer Software
+> Online Powerful Packages Installer Software
 
-Name is currently changing. We are sorry about it but we had to.
-
-## ❓ What is OPI-SW?
-**O.P.I-SW is powerful a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more! [Download it now for free](https://github.com/yasserprogamer/POSI-SW/releases).**
+## ❓ What is OPPI-SW?
+**O.P.P.I-SW is powerful a tool to download different stuff from the Internet such as GitHub, YouTube, Minecraft and more! [Download it now for free](https://github.com/yasserprogamer/OPPI-SW/releases).**
 
 
 ## ▶️ How can I run this program?
@@ -28,7 +26,7 @@ You can run it by 2 ways:
 
 ### Executable file requirements
 
-Those requirements are for `O.P.I-SW.exe` :
+Those requirements are for `O.P.P.I-SW.exe` :
 
 |      | Minimum requirements | Recommended requirements |
 | ---- | -------------------- | ------------------------ |

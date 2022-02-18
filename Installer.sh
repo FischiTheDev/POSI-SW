@@ -1,6 +1,6 @@
 #!/bin/sh
-echo -e "\033]2;P.O.S.I-SW - Package Online Service Installer Software (Installer mode)\x07"
-echo "P.O.S.I-SW Installer mode."
+echo -e "\033]2;O.P.P.I-SW - Online Powerful Packages Installer Software (Installer mode)\x07"
+echo "O.P.P.I-SW Installer mode."
 echo ""
 echo "Downloading and installing python packages...."
 pip install -r requirements.txt

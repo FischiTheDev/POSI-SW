@@ -1,7 +1,10 @@
 #!/bin/sh
 cd ./src/
-echo -e "\033]2;P.O.S.I-SW - Package Online Service Installer Software (Complier mode)\x07"
-pyinstaller -i icon.ico -n P.O.S.I-SW -c -F main.py
+echo -e "\033]2;O.P.P.I-SW - Online Powerful Packages Installer Software (Complie mode)\x07"
+echo "[38;2;00;255;00mOnline Powerful Packages Installer Software (Compile mode).[0m"
+echo "[38;2;00;255;255mCreated by: yasserprogamer.[0m"
 echo ""
-read -s -n 1 -p "Press any key to continue . . ."
+pyinstaller -i icon.ico -n O.P.P.I-SW -c -F main.py
+echo ""
+read -s -n 0 -p "Press any key to continue . . ."
 exit 0;

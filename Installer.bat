@@ -1,6 +1,6 @@
 @echo off
-title P.O.S.I-SW - Package Online Service Installer Software (Installer mode)
-echo P.O.S.I-SW Installer mode.
+title O.P.P.I-SW - Online Powerful Packages Installer Software (Installer mode)
+echo O.P.P.I-SW Installer mode.
 echo[
 echo Downloading and installing python packages....
 pip install -r requirements.txt
